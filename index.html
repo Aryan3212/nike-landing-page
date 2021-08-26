@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- Font-awesome -->
     <!-- CSS -->
-
-    
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Nike Logo and Menu -->
-        <img src="assets/nike-logo.png" alt="">
-        <!-- WELCOME, HOME, SHOP, CART, CONTACT  {nike logo-white} -->
+      <!-- Nike Logo and Menu -->
+      <img src="assets/nike-logo.png" alt="" />
+      <!-- WELCOME, HOME, SHOP, CART, CONTACT  {nike logo-white} -->
     </header>
     <main>
-        <section class="feature_img">
-            <!-- div- Enjoy every single day with Nike -->
-            <div>Enjoy every single day with Nike</div>
-            <!-- div- JUST -->
-            <div></div>
-            <!-- div- DO IT. -->
-            <!-- SHOP NOW BUTTON -->
-            <!-- feature img background circle -->
-            <!-- sideways nike -->
-            <section class="u-clearfix u-section-3 __web-inspector-hide-shortcut__" id="carousel_8b65">
-                <div class="u-clearfix u-sheet u-sheet-1"><div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1"><div class="u-layout">  <div class="u-layout-row"><div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-27 u-layout-cell-1"><div class="u-container-layout u-valign-middle-lg u-container-layout-1"><h6 class="u-text u-text-1">Women's Shoe</h6><img class="u-expanded-width u-image u-image-1" src="//images01.nicepage.com/08/84/0884e4bcd53c85af8d73d583010fed53.png"><div class="u-palette-1-light-1 u-shape u-shape-rectangle u-shape-1"></div><h2 class="u-text u-text-2">Nike Outburst&nbsp;<br></h2><p class="u-text u-text-3">The Nike Outburst Women's Shoe features a plush mesh construction with leather overlays, plus lightweight foam cushioning for all-day comfort.<br></p><ul class="u-text u-text-grey-50 u-text-4"><li>Shown: White/Black/Team Orange&nbsp;</li><li>Style: AO1069-106<br></li></ul><a href="https://store.nike.com/us/en_us/pw/womens-shoes/7ptZoi3?ipp=120" class="u-link u-link-1" target="_blank">view collection</a></div></div>
-              <div class="u-align-center-sm u-container-style u-expand-resize u-layout-cell u-right-cell u-size-33 u-layout-cell-2"><div class="u-container-layout u-valign-middle-sm u-valign-middle-xs u-container-layout-2"><div class="u-palette-1-base u-shape u-shape-circle u-shape-2"></div><img class="u-image u-image-contain u-image-2" src="//images01.nicepage.com/97/df/97dfd1fecb1cc4788d0b0284309cf144.png"></div></div>  </div></div></div></div>
-                
-                
-                
-                
-                
-              </section>
+      <section class="feature_img">
+        <div class="feature_text">
+          <div>Enjoy every single day with Nike</div>
+          <div id="just">JUST</div>
+          <div id="do_it">DO IT.</div>
+        <!-- SHOP NOW BUTTON -->
+        <button type="button" class="btn btn-outline-warning">SHOP NOW</button>
+      </div>
+        <!-- feature img background circle -->
+        <img src="./assets/feature-shoe.png" alt="Alphabounce shoe">
+        <!-- sideways nike -->
+        <div class="rotated"><span id="ni">NI</span><span>KE</span></div>
+        
+      </section>
+      <section class="top_products">
+        <h2>TOP PRODUCTS</h2>
+        <!-- three cards > img + div +color button + Add to cart button -->
+     <div class="card-deck">
+        <div class="card" >
+          <img class="card-img-top" src="assets/red-shoe.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">NIKE F50</h5>
+            <p class="card-text">250 USD</p>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-dark">Add to Cart</button>
+          </div>
+        </div>
+          <div class="card" >
+            <img class="card-img-top" src="assets/purple-shoe.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">NIKE F50</h5>
+              <p class="card-text">350 USD</p>
+            </div>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card" >
+            <img class="card-img-top" src="assets/black-shoe.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">NIKE F50</h5>
+              <p class="card-text">550 USD</p>
+            </div>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Add to Cart</button>
+            </div>
+          </div>
+      </section>
+      <section class="cart_estimation">
+        <h2>ESTIMATE YOUR CART</h2>
+        <section class="cart_grid">
+          <div class="cart_heading"><p>Product</p><p>Quantity</p><p>Price</p><p>Tax (15%)</p><p>Price with Tax</p></div>
+          <div class="items_rows"><img src="assets/red-shoe.png" alt=""> <div>
+            <button>plus</button> Q <button>minus</button> 
+          </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
+          <hr>
+          <div class="items_rows"><img src="assets/black-shoe.png" alt=""> <div>
+            <button>plus</button> Q <button>minus</button> 
+          </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
+          <hr>
+          <div class="items_rows"><img src="assets/purple-shoe.png" alt="" style="transform: rotate(43deg) scale(80%);"> <div>
+            <button>plus</button> Q <button>minus</button> 
+          </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
+          <hr>
+          <div class="total">Total: </div><div class="sum">1315.45$</div>
         </section>
-        <section class="top_products">
-            <!-- three cards > img + div +color button + Add to cart button -->
-        </section>
-        <section class="cart_estimation">
-
-        </section>
-        <section class="subscribe">
-
-        </section>
+      </section>
+      <section class="subscribe"></section>
     </main>
-    <footer>
-        <!-- {nike logo-white } All rights reserved to Nike @2021-->
-    </footer>
-</body>
+    <footer class="footer">
+      <!-- {nike logo-white } All rights reserved to Nike @2021-->
+      <img src="./assets/nike-tick-logo-white.png" alt=""><p>All rights reserved to Nike &copy2021</p></footer>
+  </body>
 </html>
