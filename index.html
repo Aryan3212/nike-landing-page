@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="styles/scss/fontawesome.css" rel="stylesheet">
     <!-- Font-awesome -->
     <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
@@ -15,27 +15,31 @@
     <header>
       <!-- Nike Logo and Menu -->
       <img src="assets/nike-logo.png" alt="" />
-      <i class="fas fa-bars"></i>
+      <object data="assets/menu-bars-svgrepo-com.svg" > </object>
+      <i class="fas fa-bars">a</i>
       <!-- WELCOME, HOME, SHOP, CART, CONTACT  {nike logo-white} -->
     </header>
     <main>
       <section class="feature_img">
         <div class="feature_text">
-          <div>Enjoy every single day with Nike</div>
+          <div id="text">Enjoy every single day with Nike</div>
           <div id="just">JUST</div>
           <div id="do_it">DO IT.</div>
         <!-- SHOP NOW BUTTON -->
         <button type="button" class="btn btn-outline-warning">SHOP NOW</button>
       </div>
         <!-- feature img background circle -->
-        <img src="./assets/feature-shoe.png" alt="Alphabounce shoe">
-        <!-- sideways nike -->
+        <div>
+          <span id = "shoe_feature">
+            <img src="./assets/feature-shoe.png" alt="Alphabounce shoe">
+          </span>
+          <!-- sideways nike -->
+        </div>
         <div class="rotated"><span id="ni">NI</span><span>KE</span></div>
         
       </section>
       <section class="top_products">
         <h2>TOP PRODUCTS</h2>
-        <!-- three cards > img + div +color button + Add to cart button -->
      <div class="card-deck">
         <div class="card" >
           <img class="card-img-top" src="assets/red-shoe.png" alt="Card image cap">
@@ -44,7 +48,7 @@
             <p class="card-text">250 USD</p>
           </div>
           <div class="card-body">
-            <button type="button" class="btn btn-dark">Add to Cart</button>
+            <button id="product_btn" type="button" class="btn btn-dark">Add to Cart</button>
           </div>
         </div>
           <div class="card" >
@@ -54,7 +58,7 @@
               <p class="card-text">350 USD</p>
             </div>
             <div class="card-body">
-              <button type="button" class="btn btn-dark">Add to Cart</button>
+              <button id="product_btn" type="button" class="btn btn-dark">Add to Cart</button>
             </div>
           </div>
           <div class="card" >
@@ -64,7 +68,7 @@
               <p class="card-text">550 USD</p>
             </div>
             <div class="card-body">
-              <button type="button" class="btn btn-dark">Add to Cart</button>
+              <button id="product_btn" type="button" class="btn btn-dark">Add to Cart</button>
             </div>
           </div>
       </section>
@@ -73,29 +77,30 @@
         <section class="cart_grid">
           <div class="cart_heading"><p>Product</p><p>Quantity</p><p>Price</p><p>Tax (15%)</p><p>Price with Tax</p></div>
           <div class="items_rows"><img src="assets/red-shoe.png" alt=""> <div>
-            <button>plus</button> Q <button>minus</button> 
+            <button class="btn btn-outline-warning">+</button> <span>1</span> <button class="btn btn-outline-warning">-</button > 
           </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
           <hr>
           <div class="items_rows"><img src="assets/black-shoe.png" alt=""> <div>
-            <button>plus</button> Q <button>minus</button> 
+            <button class="btn btn-outline-warning">+</button> <span>1</span> <button class="btn btn-outline-warning">-</button> 
           </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
           <hr>
           <div class="items_rows"><img src="assets/purple-shoe.png" alt="" style="transform: rotate(43deg) scale(80%);"> <div>
-            <button>plus</button> Q <button>minus</button> 
+            <button class="btn btn-outline-warning">+</button> <span>1</span> <button class="btn btn-outline-warning">-</button > 
           </div><p>250 $</p> <p>37.5 $</p> <p>287.5 $</p></div>
           <hr>
-          <div class="total">Total: </div><div class="sum">1315.45$</div>
+          <div class="total">TOTAL: </div><div class="sum">1315.45$</div>
         </section>
       </section>
 
       <section class="subscribe">
           <p id="banner_text">NIKE</p>
         <div class="subscribe_text">
-          <p>SUBSCRIBE</p>
+          <p id="subscribe">SUBSCRIBE</p>
         <!-- SHOP NOW BUTTON -->
        <form action="" class="form-inline">
-         <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="&#xf1d8; Your E-mail" style="font-family:Arial, FontAwesome" /><button type="button" class="btn btn-dark">SEND</button><p style="display:inline-block;">JUST <p>DO IT.</p></p>
+         <input type="text" class="form-control mb-2 mr-sm-2" placeholder="&#f1d8; Your E-mail" style="font-family:Arial, FontAwesome" /><button type="button" class="btn btn-dark">SEND</button>
        </form>
+       <p style="display: inline-block;">JUST <p>DO IT.</p>
       </div>
         <!-- feature img background circle -->
         <img src="./assets/subscribe-shoe.png" alt="Subscribe white shoe">
@@ -105,5 +110,6 @@
     <footer class="footer">
       <!-- {nike logo-white } All rights reserved to Nike @2021-->
       <img src="./assets/nike-tick-logo-white.png" alt=""><p>All rights reserved to Nike &copy2021</p></footer>
-  </body>
+      <script src="scripts/app.js"></script>
+    </body>
 </html>
