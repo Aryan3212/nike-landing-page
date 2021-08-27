@@ -78,9 +78,8 @@ header
         z-index: 0;
         color: #C8C6C6;
         font-size: 15rem;
-        writing-mode: tb-rl;
-        transform: rotate(-180deg); 
-      
+        transform: rotate(-90deg) translateY(300px); 
+        overflow:
 
         #ni
             color: rgba(0,0,0,0);
@@ -88,16 +87,138 @@ header
 
 .top_products
 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(to bottom,#{$white} 70%,#{$orange} 30%);
-    position: relative;
+    
+    h2
+        text-align: center
+        font-weight: 900
+        color: $orange
+        position: relative
+        top: 10%
+        span
+            color: $black
+ 
 
-    img
-        width: 25%;
-        filter: drop-shadow(25px 50px 45px #000);
+    img 
+        position: absolute
+        width: 200px
+        filter: drop-shadow(25px 50px 45px #000)
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 10%
+    .card-deck
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        display: flex
+        justify-content: center
 
+    .card-body
+        display: flex
+        justify-content: space-around
+        height: 10px
+
+    .color__selector
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+        bottom: -70%
+        
+        .red
+            background-color: #{$orange}
+            border-radius: 50%
+            height: 20px
+            width: 20px 
+            display: inline-block
+            filter: brightness(80%)
+            &__checked
+                background-color: #{$orange}
+                border-radius: 50%
+                height: 20px
+                width: 20px 
+                display: inline-block
+                border: 1px solid white
+                filter: none
+                
+        .black
+            background-color: #{$black}
+            border-radius: 50%
+            height: 20px
+            width: 20px 
+            display: inline-block
+            filter: brightness(80%)
+            &__checked
+                background-color: #{$black}
+                border-radius: 50%
+                height: 20px
+                width: 20px 
+                display: inline-block
+                border: 1px solid white
+                filter: none
+
+        .purple
+            background-color: #{$purple}
+            border-radius: 50%
+            height: 20px
+            width: 20px 
+            display: inline-block
+            filter: brightness(80%)
+            &__checked
+                background-color: #{$purple}
+                border-radius: 50%
+                height: 20px
+                width: 20px 
+                display: inline-block
+                border: 1px solid white
+                filter: none
+
+        
+
+        
+                
+        
+        
+    .card
+        height: 40vh
+        background-color: #f5f5f5
+        border: none
+        flex-basis: 300px
+        flex-grow: 0
+        flex-shrink: 0
+        margin: 0 50px
+
+
+    .card_backdrop
+        width: 85%
+        height: 40%
+        position: relative
+        border-radius: 10px
+        background-color: #{$purple}
+        top: 10px
+        left: 50%
+        transform: translateX(-50%)
+
+    #product_btn
+        position: absolute
+        padding: 0.5em 2em
+        bottom: -20px
+        left: 50%
+        transform: translateX(-50%)
+
+.cart_estimation
+     h2
+        text-align: center
+        font-weight: 900
+        color: $orange
+        padding: 2em
+        position: relative
+        top: 10%
+        span
+            color: $black
 
 .cart_grid
     display: grid;
@@ -177,7 +298,7 @@ header
 .subscribe
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background: linear-gradient(to bottom,#{$white} 50%,#{$orange} 50%);
@@ -197,27 +318,30 @@ header
         color: rgba(0,0,0,0);
         -webkit-text-stroke: 1px #{$orange};
     .subscribe_text
-        position: absolute;
-        bottom: 0;
-        
+        position: absolute
+        bottom: 20%
+        left: 20%
         #subscribe
-            font-size: 2rem;
+            font-size: 2rem
         p
 
-            font-weight: 900;
-            color: #{$white};
+            font-weight: 900
+            color: #{$white}
 
-
+    .form-inline
+        p
+            width: 60px
+            padding: 0.2em
             
     img
-        width: 40%;
-        //transform: rotate();
-        z-index: 2;
-        filter: drop-shadow(25px 50px 45px #000);
-        &::before
-            content: 'aasdasdasdas';
-            display: inline-block;
-            width: 200px;
-            height: 200px;
-            border-radius: 7.5px;
-            background-color: #69b6d5;
+        position: absolute
+        width: 500px
+        left: 100%
+        transform: translateX(45%)
+        bottom: 50%
+        z-index: 2
+        filter: drop-shadow(25px 50px 45px #000)
+    #nike-tick
+        position: absolute
+        left: 100%
+        transform: translateX(100px) scale(2) translateY(-70px)
