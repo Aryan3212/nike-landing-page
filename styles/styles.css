@@ -440,7 +440,7 @@ header object {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/6;
-  background-color: #3d3d3d;
+  background-color: #000000;
   color: #fdfcfc;
   text-align: center;
   font-size: 1.25rem;
@@ -459,7 +459,7 @@ header object {
 }
 
 .footer {
-  background-color: #3d3d3d;
+  background-color: #000000;
   padding-top: 1em;
   color: #fdfcfc;
   display: -webkit-box;
