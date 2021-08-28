@@ -41,7 +41,7 @@ if(localStorage.getItem("cart")){
     cart = JSON.parse(localStorage.getItem("cart"));
  }
 if (cart) {
-    // populate cart
+    // populate cart1
 }
 
 // Event delegation
@@ -49,6 +49,13 @@ if (cart) {
 
 product_buttons = document.querySelectorAll("#product_btn");
 
+quantity_plus_btns = document.querySelectorAll(".cart_estimation .btn-outline-warning");
+
+color_changers = document.querySelectorAll(".cart_estimation .btn-outline-warning");
+
+
+
+console.dir(product_buttons)
 product_buttons.forEach((button) => {
     button.addEventListener('click', () => {
       addShoeToCart(button)

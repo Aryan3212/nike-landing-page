@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100300400700900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -43,6 +43,7 @@ header object {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fdfcfc), color-stop(50%, #0a080a));
   background: linear-gradient(to bottom, #fdfcfc 50%, #0a080a 50%);
   position: relative;
+  overflow-x: hidden;
 }
 
 .feature_img .feature_text #text {
@@ -54,12 +55,16 @@ header object {
   margin-top: 0.5em;
   font-size: 5rem;
   font-weight: 900;
-  line-height: 1em;
+  position: relative;
+  bottom: -30px;
+  line-height: 1.5em;
 }
 
 .feature_img .feature_text #do_it {
   line-height: 1em;
   color: #fff;
+  position: relative;
+  top: 5px;
   font-size: 5rem;
   font-weight: 900;
 }
@@ -78,7 +83,8 @@ header object {
 }
 
 .feature_img img {
-  width: 50%;
+  width: 700px;
+  margin-right: 50px;
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
   display: block;
@@ -87,17 +93,34 @@ header object {
           filter: drop-shadow(25px 50px 45px #000);
 }
 
+.feature_img #orange_circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 50%;
+  z-index: 0;
+  bottom: 50%;
+  -webkit-transform: translateX(0) translateY(50%);
+          transform: translateX(0) translateY(50%);
+  background-color: #e44012;
+  border-radius: 50%;
+}
+
 .feature_img .rotated {
   padding: 0;
   margin: 0;
   line-height: 0;
   position: absolute;
-  right: 0.39em;
+  left: 100vw;
   z-index: 0;
   color: #C8C6C6;
-  font-size: 15rem;
-  -webkit-transform: rotate(-90deg) translateY(300px);
-          transform: rotate(-90deg) translateY(300px);
+  font-size: 16rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(-180deg) translateX(100px);
+          transform: rotate(-180deg) translateX(100px);
+  line-height: 0px;
 }
 
 .feature_img .rotated #ni {
@@ -115,6 +138,7 @@ header object {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fdfcfc), color-stop(30%, #e44012));
   background: linear-gradient(to bottom, #fdfcfc 70%, #e44012 30%);
+  overflow: hidden;
 }
 
 .top_products h2 {
@@ -140,7 +164,7 @@ header object {
   bottom: 10%;
 }
 
-.top_products .card-deck {
+.top_products .card-d {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -296,12 +320,11 @@ header object {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-gap: minmax(0, 1fr);
+  overflow: hidden;
 }
 
 .cart_grid img {
   width: 25%;
-  -webkit-filter: drop-shadow(25px 50px 45px #000);
-          filter: drop-shadow(25px 50px 45px #000);
 }
 
 .cart_grid .items_rows {
@@ -425,19 +448,22 @@ header object {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fdfcfc), color-stop(50%, #e44012));
   background: linear-gradient(to bottom, #fdfcfc 50%, #e44012 50%);
   z-index: 2;
+  overflow-x: hidden;
 }
 
 .subscribe #banner_text {
+  font-family: "Open Sans",sans serif,  "Lato";
   padding: 0;
   margin: 0;
   line-height: 0;
   position: absolute;
-  left: -0.03em;
-  top: 40%;
+  left: -2%;
+  top: 38%;
   z-index: -999;
   overflow-x: hiddfen;
   color: black;
-  font-size: 15rem;
+  font-size: 20rem;
+  font-weight: 900;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #e44012;
 }
@@ -465,9 +491,9 @@ header object {
 .subscribe img {
   position: absolute;
   width: 500px;
-  left: 100%;
-  -webkit-transform: translateX(45%);
-          transform: translateX(45%);
+  left: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   bottom: 50%;
   z-index: 2;
   -webkit-filter: drop-shadow(25px 50px 45px #000);
@@ -479,5 +505,7 @@ header object {
   left: 100%;
   -webkit-transform: translateX(100px) scale(2) translateY(-70px);
           transform: translateX(100px) scale(2) translateY(-70px);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
